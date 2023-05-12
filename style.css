@@ -1,21 +1,20 @@
 @font-face {
     font-family: 'Montserrat';
     src: local('meta-normal'), local('meta-normal'),
-    url('assets/Montserrat-Medium.ttf') format('truetype');
+    url('assets/fonts/Montserrat-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Montserrat-italic';
     src: local('meta-normal'), local('meta-normal'),
-    url('assets/Montserrat-MediumItalic.ttf') format('truetype');
+    url('assets/fonts/Montserrat-MediumItalic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 body{
     font-family: 'Montserrat';
     color: #fff;
-    background-color: #00698c;
     background-color: #131313;
     -moz-background-size: 100%; 
     -webkit-background-size: 100%;
@@ -41,7 +40,7 @@ body{
     flex-shrink: 0;
     width: 200px;
     margin-right: 70px;
-    color: #4a94ff;
+    color: #5265f6;
     text-transform: uppercase;
     text-align: right;
     font-weight: 700;
@@ -66,9 +65,14 @@ body{
     width: 100%;
     max-width: 650px;
 }
+.intro__contact .highlight-link:hover {
+    transition: 0.10s;
+    padding-bottom: 1px;
+    border-bottom: solid 3px #5265f6;
+}
 .pl {
-    color: rgb(77, 169, 255);
-    border-color: rgb(0, 64, 156);
+    color: #5265f6;
+    border-color: #5265f6;
     background-image: initial;
     background-color: transparent;
     display: inline-block;
@@ -78,33 +82,21 @@ body{
     font-weight: 700;
     padding: 2px 7px;
     border-radius: 3px;
-    color: #4a94ff;
-    border: 1px solid #4a94ff;
+    color: #5265f6;
+    border: 1px solid #5265f6;
     background: transparent;
 }
 .intro__hello {
-    font-weight: 300;
+    font-weight: 300px;
 }
 .intro__tagline {
-    font-weight: 300;
     max-width: 700px;
 }
-.intro__hello {
-    font-size: 2.5rem;
-}
- .intro__tagline {
-    font-size: 2.5rem;
-}
 .intro__contact {
-    font-size: 1.25rem;
     font-weight: 400;
 }
-.intro__contact .highlight-link {
-    text-decoration-color: initial;
-    box-shadow: rgb(0, 65, 160) 0px -3px 0px inset;
-}
 a{
-    color: rgb(217, 214, 209);
+    color: #5265f6;
     font-size: 18px;
     user-select: none;
     text-decoration: none;
@@ -116,14 +108,20 @@ a{
     display: inline-block;
     background-color: transparent;
     white-space: nowrap;
+    background-color: transparent;
 }
-.footer__links a:after {
+.arrow-link:hover{
+    transition: 0.10s;
+    padding-bottom: 1px;
+    border-bottom: solid 3px #5265f6;
+}
+.footer__links {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     height: 1px;
-    background: #4a94ff;
+    background: #5265f6;
     content: "";
     opacity: 0;
     -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
