@@ -1,3 +1,7 @@
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
 @font-face {
     font-family: 'Montserrat';
     src: local('meta-normal'), local('meta-normal'),
@@ -12,23 +16,46 @@
     font-weight: normal;
     font-style: normal;
 }
-body{
-    font-family: 'Montserrat';
-    color: #fff;
-    background-color: #131313;
-    -moz-background-size: 100%; 
-    -webkit-background-size: 100%;
-    -o-background-size: 100%; 
-    background-size: 100%; 
+html, body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #ffffff;
+    font-family: Montserrat;
+    width: 100%;
 }
-.intro{
-    padding:  120px  100px;
-    height:  100px;
-    display:  flex;
+html.night, body.night {
+    background-color: #131313;
+    color: #fff;
+}
+.intro {
+    padding: 120px 100px;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
-    justify-content: space-around; 
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     max-width: 1440px;
     margin: 0 auto;
+}
+.into__hello{
+    font-weight: 300;
+}
+.intro__hello{
+    font-size: 5rem;
+}
+.intro__tagline {
+    font-size: 2rem;
+}
+.intro__tagline {
+    font-weight: 300;
+    max-width: 700px;
 }
 .section{
     display: flex;
