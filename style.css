@@ -46,6 +46,7 @@ html.night, body.night {
 }
 .intro__hello{
     font-size: 3rem;
+
 }
 .intro__tagline {
     font-size: 2rem;
@@ -93,7 +94,7 @@ html.night, body.night {
     width: 100%;
     max-width: 650px;
 }
-.intro__contact .highlight-link:hover {
+.highlight-link:hover {
     transition: 0.10s;
     padding-bottom: 1px;
     border-bottom: solid 3px #5265f6;
@@ -151,20 +152,7 @@ a{
 }
   
 .footer__links {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: #5265f6;
-    content: "";
-    opacity: 0;
-    -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-    transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-    transition: height 0.3s, opacity 0.3s, transform 0.3s;
-    transition: height 0.3s, opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
+    
 }
 .copy__right {
     font-weight: 700;
