@@ -31,7 +31,7 @@ html.night, body.night {
 }
 .intro {
     padding: 120px 100px;
-    height: 100vh;
+    height: 80vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -44,11 +44,8 @@ html.night, body.night {
     max-width: 1440px;
     margin: 0 auto;
 }
-.into__hello{
-    font-weight: 300;
-}
 .intro__hello{
-    font-size: 5rem;
+    font-size: 3rem;
 }
 .intro__tagline {
     font-size: 2rem;
@@ -112,15 +109,6 @@ html.night, body.night {
     color: #5265f6;
     border: 1px solid #5265f6;
     background: transparent;
-}
-.intro__hello {
-    font-weight: 300px;
-}
-.intro__tagline {
-    max-width: 700px;
-}
-.intro__contact {
-    font-weight: 400;
 }
 a{
     color: #5265f6;
