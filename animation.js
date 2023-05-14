@@ -61,3 +61,12 @@ const wrap1 = new parallaxTiltEffect({
   element: $('.wrap--1'),
   tiltEffect: 'reverse'
 });
+<script src="http://code.jquery.com/jquery.min.js"></script>
+2
+<script>
+3
+if($) alert("Yes!") ;
+4
+else alert("No") ;
+5
+</script>
