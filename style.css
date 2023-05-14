@@ -177,7 +177,7 @@ a{
     align-items: flex-end;
     position: relative;
     transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
-    background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url("assets/img/Card\ \(2\).png");
+    background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url("assets/img/CardLow2.jpg");
     background-position: var(--bX) var(--bY);
     background-size: 21rem auto;
     box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
