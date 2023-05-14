@@ -1,3 +1,49 @@
+(function () {
+  var squareWrapper = document.querySelector('.square-wrapper');
+  var square = squareWrapper.querySelector('.square');
+  square.classList.remove('square-transition');
+
+  var observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference()) {
+        return;
+      }
+
+      if (entry.isIntersecting) {
+        square.classList.add('square-transition');
+        return;
+      }
+
+      square.classList.remove('square-transition');
+    });
+  });
+
+  observer.observe(squareWrapper);
+})();
+
+(function () {
+  var squareWrapper = document.querySelector('.target-wrapper');
+  var square = squareWrapper.querySelector('.target');
+  square.classList.remove('target-transition');
+
+  var observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference()) {
+        return;
+      }
+
+      if (entry.isIntersecting) {
+        square.classList.add('target-transition');
+        return;
+      }
+
+      square.classList.remove('target-transition');
+    });
+  });
+
+  observer.observe(squareWrapper);
+})();
+
 class parallaxTiltEffect {
 
   constructor({element, tiltEffect}) {
@@ -61,3 +107,4 @@ const wrap1 = new parallaxTiltEffect({
   element: $('.wrap--1'),
   tiltEffect: 'reverse'
 });
+
